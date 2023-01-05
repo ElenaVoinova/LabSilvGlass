@@ -1,0 +1,520 @@
+.word {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    background-color: #D7E9F7;
+    flex-wrap: wrap;
+}
+
+.simbol, a {
+    align-self: center;
+}
+
+#myVideo {
+    width: 70%;
+    height: 50%;
+    margin-left: 200px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+    align-self: center; 
+}
+
+p {
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+    align-self: center;
+}
+
+.text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+    stroke: #132C33;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+    stroke: #126E82;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+    stroke: #51C4D3;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+    stroke: #9c967c;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+    stroke: #132C33;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    /* background-color: ; */
+    background-size: .2em 100%;
+    font: 5em/1 Open Sans, Impact;
+    /* text-transform: uppercase; */
+    margin: 0;
+    /* background-image: url(beauty5.jpg);
+    background-size: cover; */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background: url(beauty5.jpg) center / cover no-repeat;
+    filter: blur(5px);
+    filter: contrast(60%); /* Размытие */
+}
+
+svg {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
+
+.one {
+    display: flex;
+    margin: 20px;
+    background-color: #08314d;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    font-size: 20px;
+    color: #FFEDA3;
+    font-family: 'Rubik', sans-serif;
+    margin: 25px;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FFEDA3;
+    flex:1;
+    flex-wrap: wrap;
+}
+
+.nav:hover {
+    background-color: #08314d;
+    border: 5px solid #08314d;
+    font-weight: bolder;
+}
+
+.menu {
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #08314d;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.menu:hover {
+    color: #FFEDA3;
+    border: 2px solid #FFEDA3;
+}
+
+.company {
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+    align-self: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 350px;
+    border: 3px solid #D7E9F7;
+    width: 50%;
+    padding: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+}
+
+input {
+    padding: 10px;
+}
+
+.quest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background-color: #08314d;
+    color: #D7E9F7;
+    font-weight: bolder;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #D7E9F7;
+    color: #08314d;
+    transition-duration: 5s;
+    font-weight: bolder;
+}
+
+.anime {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.anime img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+
+.anime img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.simbol2 {
+    background-color: #D7E9F7;
+    height: 20%;
+}
+
+.phone {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phone2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.phone3 {
+    font-size: 12px;
+    color: #D7E9F7;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about {
+    font-size: 20px;
+    color: #D7E9F7;
+    font-family: 'Rubik', sans-serif;
+    padding: 30px;
+}
+
+.us {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: #08314d;
+    flex:1;
+}
+
+.about-us {
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+    /* flex-wrap: wrap; */
+}
+
+.cena {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    background-color: #08314d;
+}
+
+.glass {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    color: #D7E9F7;
+    align-self: center;
+}
+
+.price8 {
+    font-size: 30px;
+}
+
+ins {
+    color: #F8485E;
+    text-decoration: none;
+}
+
+.cta2 {
+    background-color: #F8485E;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cta2:hover {
+    background-color: #FFEDA3;
+    color: #08314d;
+}
+
+.adress {
+    display: flex;
+    background-color: #D7E9F7;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.flor, a {
+    font-size: 13px;
+    color: #08314d;
+    margin: 10px;
+}
+
+.name {
+    display: flex;
+    font-size: 10px;
+    color: #08314d;
+}
+
+.contact {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.tel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #FFEDA3;
+}
+
+@media all and (max-width:500px) {
+    body {
+        background-color: rgb(66, 60, 60);
+    }
+    
+    #myVideo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    /* .heading {
+        margin-left: 10px;
+    } */
+
+    h1 {
+        font-size: 20px;
+        /* align-self: center; */
+    }
+
+    .comp {
+        font-size: 30px;
+        margin-right: 50px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+    
+    .one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form {
+        margin: 0;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    svg {
+        width: 80%;
+        height: 80%;
+    }
+
+    .word5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 70vh;
+    }
+
+    .phone2 {
+        margin: 0;
+    }
+
+    .menu {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .us {
+        flex-direction: column;
+        width: 70%;
+        justify-content: flex-start;
+    }
+
+    .anime {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .adress {
+        width: 70%;
+    }
+}
+
+@media all and (max-width:800px) {
+    body {
+        background-color: rgb(66, 60, 60);
+    }
+    
+    #myVideo {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .heading {
+        margin-left: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+        align-self: center;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    .one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .btn {
+        font-size: 30px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    svg {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+
+
+
+
+
+
